@@ -1,0 +1,52 @@
+/*      Andy Kolb           */
+/*      Pretty About Me     */
+/*      style.css           */
+/*      9/11/2021           */
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-color: #A2AEBB;
+    color: #071013;
+    padding: 20px;
+}
+
+a:link, a:visited {
+    color: #23B5D3;
+}
+a:hover, a:active {
+    color: #EF233C;
+}
+
+nav, section {
+    background-color: #DFE0E2;
+    overflow: hidden;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+nav a {
+    text-decoration: none;;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin:20px;
+}
+footer div {
+    flex-basis: 50%;
+}
