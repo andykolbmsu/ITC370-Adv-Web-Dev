@@ -1,0 +1,199 @@
+/*      Andy Kolb           */
+/*      About a Company     */
+/*      style.css           */
+/*      9/17/2021           */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Arial Narrow', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+h1 {
+    color: #43688d;
+    font-size: 36px;
+    line-height: 1.0em;
+}
+h2 {
+    color: #6fb1c8;
+    font-size: 32px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: #1b2a39;
+}
+
+/*  HEADER  */
+
+header {
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 40px;
+}
+
+#logo {
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*  NAVIGATION  */
+
+nav {
+    border-top: 1px solid #43688d;
+    text-align: center;
+    background-color: #6fb1c8;
+}
+nav ul {
+    padding: 6px 0;
+   list-style: none;
+}
+nav ul li {
+    display: inline-block;
+}
+nav a {
+    padding: 10px 30px;
+    text-decoration: none;
+}
+nav a:link, nav a:visited {
+    color:#ffffff;
+}
+nav a:hover {
+    background-color: #FF0035;
+}
+
+/*  CONTENT  */
+
+section.content {
+    color:#333333;
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.8);
+}
+.contentContainer {
+    padding: 20px;
+    overflow: auto;
+}
+.photoContainer {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.photoTextBox {
+    position:absolute;
+    background-color:rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    width:50%;
+    bottom:20px;
+    right:20px;
+}
+
+/*  INDEX   */
+
+a.interstellarBtn {
+    background-color: #6fb1c8;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+a.interstellarBtn:hover {
+    background-color: #FF0035;
+}
+
+#interstellarMap {
+    float:right;
+    width:50%;
+    max-width:400px;
+    border:1px solid #666666;
+}
+
+/*  PRODUCTS  */
+
+.productContainer {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.product {
+    flex-basis: 25%;
+}
+.prodBox {
+    background-color: #ffffff;
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2em;
+    cursor: pointer;
+	transition: all 0.2s ease-out;
+}
+.prodBox:hover {
+    background-color: #eeeeee;
+}
+.prodImg img {
+    width: 90%;
+    max-width: 100px;
+}
+.prodTitle {
+    font-weight: 600;
+}
+.prodAuthor {
+    font-style: italic;
+}
+.prodPrice {
+    font-size: 12px;
+}
+.prodPrice del {
+    display: block;
+    color:#999999;
+}
+.prodAvail {
+    font-size: 12px;
+    color:#FF0035;
+}
+
+/*  FOOTER  */
+
+footer {
+    color: #70b2c9;
+    text-align: center;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+footer a:link, footer a:visited {
+    color:#70b2c9;
+}
+footer a:hover {
+    color: #FF0035;
+}
+
+.footerAddress {
+    margin-bottom: 4px;
+}
+.footerHours {
+    margin-bottom: 16px;
+}
+.footerSocial {
+    font-size: 36px;
+}
+.footerSocial i {
+    margin: 0 10px;
+}
