@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--    Andy Kolb                  -->
+    <!--    Fit for Fun Fitness Club   -->
+    <!--    info.html                  -->
+    <!--    10/03/2021                 -->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Information | Fit for Fun Fitness Club</title>
+        <link href="./css/style.css" rel="stylesheet" type="text/css" media="all">
+        <!-- Fontawesome included for social media icons -->
+        <script src="https://kit.fontawesome.com/488bdcee47.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <!--    Header      -->
+        <header>
+
+            <div class="headerLogo">
+                <img src="./images/fitforfun-logo.jpg" alt="Fit for Fun Fitness Club">
+            </div>
+
+            <div class="headerNav">
+           
+                <!--    Navigation      -->
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./classes.html">Classes</a></li>
+                        <li><a href="./info.html">Information</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </header>
+
+        <!--    Content     -->
+
+        <main class="content">
+
+            <h1>Class Information</h1>
+
+            <p>Use the form below to sign up for our classes.</p>
+            
+            <!--    Sign up form    -->
+
+            <form action="thankyou.html" method="GET">
+        
+                <div class="formElements">
+
+                    <div style="flex-basis: 50%;">
+                        <input type="text" id="firstname" name="firstname">
+                        <label for="firstname">First name</label>
+                    </div>
+
+                    <div style="flex-basis: 50%;">
+                        <input type="text" id="lastname" name="lastname">
+                        <label for="lastname">Last name</label>
+                    </div>
+
+                    <div style="flex-basis: 50%;">
+                        <input type="text" id="email" name="email">
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div style="flex-basis: 50%;">
+                        <input type="text" id="phone" name="phone">
+                        <label for="phone">Phone</label>
+                    </div>
+
+                    <div style="flex-basis: 50%;">
+                        <p style="margin-bottom: 0;">How should be contect you?</p>
+                        <select id="contact" name="contact">
+                            <option disabled selected>Choose contact type</option>
+                            <option>Email</option>
+                            <option>Phone</option>
+                            <option>Text</option>
+                            <option>Owl</option>
+                        </select>
+                    </div>
+
+                    <div style="flex-basis: 100%;">
+                        <p style="margin-bottom: 0;">What classes are you interested in?</p>
+                        <input type="checkbox" id="class1" name="class1" value="aerobics">
+                        <label for="class1"> Aerobics</label><br>
+                        <input type="checkbox" id="class2" name="class2" value="cycling">
+                        <label for="class2"> Cycling</label><br>
+                        <input type="checkbox" id="class3" name="class3" value="boxing">
+                        <label for="class3"> Boxing</label><br>
+                        <input type="checkbox" id="class4" name="class4" value="zumba">
+                        <label for="class4"> Zumba</label>
+                    </div>
+
+                    <div style="flex-basis: 100%;">
+                        <p style="margin-bottom: 0;">What is your preferred class time?</p>
+                        <input type="radio" id="am" name="time" value="am">
+                        <label for="am"> A.M.</label><br>
+                        <input type="radio" id="pm" name="time" value="pm">
+                        <label for="pm"> P.M.</label>
+                    </div>
+
+                    <div style="flex-basis: 100%;">
+                        <button id="submit" type="submit">Submit</button>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </main>
+
+    </body>
+</html>

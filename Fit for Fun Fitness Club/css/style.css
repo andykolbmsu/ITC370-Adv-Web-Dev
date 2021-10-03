@@ -1,0 +1,198 @@
+/*      Andy Kolb                    */
+/*      Fit for Fun Fitness Club     */
+/*      style.css                    */
+/*      10/03/2021                   */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #FDF4E8;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 20px;
+}
+h1 {
+    color: #13273B;
+}
+a {
+    color: #2EA8F4;
+}
+a:hover {
+    color: #BD1E1E;
+}
+
+header {
+    background-color: #2e5176;
+    overflow: auto;
+    border-bottom: 4px solid #13273B;
+}
+.headerLogo {
+    float: left;
+    width: 50%;
+}
+.headerLogo img {
+    width: 300px;
+    margin: 20px;
+}
+.headerNav {
+    float: left;
+    width: 50%;
+    text-align: right;
+}
+nav {
+    margin:20px;
+}
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+nav a {
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: ease-in 100ms all;
+}
+nav a:hover {
+    color: #2EA8F4;
+}
+
+main.content {
+    margin:0 auto;
+    padding: 40px;
+    width: 90%;
+    max-width: 900px;
+    background-color: #ffffff;
+}
+
+
+/*  INDEX   */
+
+.indexSubhead {
+    font-size: 20px;
+    color: #9b9fa3;
+}
+.catContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.catBlock {
+    flex-basis: 33.333%;
+}
+.catImage {
+    margin: 4px;
+    padding: 100px 0;
+    background-color: #666;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 0px 0px 5px #000;
+    text-align: center;
+    border-radius: 10px;
+}
+a#signUpBtn {
+    color: #fff;
+    background-color: #2EA8F4;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 6px 24px;
+    cursor: pointer;
+    transition: ease-in 100ms all;
+}
+a#signUpBtn:hover {
+    background-color: #BD1E1E;
+}
+
+
+/*  CLASSES   */
+
+.classTable {
+    font-size: 12px;
+    width: 100%;
+    border: 1px solid #666;
+    border-collapse: collapse;
+}
+.classTable th, .classTable td {
+    width: 14.28%;
+    padding: 6px;
+    border: 1px solid #999;
+    vertical-align: top;
+}
+.classTable thead {
+    background-color: #2e5176;
+    color: #fff;
+
+}
+
+.classEmpty {
+    background-color:#CCC;
+}
+
+.classTitle {
+    font-weight: bold;
+}
+.classTime {
+    color: #999;
+}
+.classInstructor {
+    font-style: italic;
+    color: #999;
+}
+
+
+/*  INFORMATION   */
+
+.formElements {
+    display: flex;
+    flex-wrap: wrap;
+}
+.formElements div {
+    margin-bottom: 20px;
+}
+.formElements input[type=text], .formElements select {
+    display: block;
+    width: 80%;
+    padding: 2px;
+}
+.formElements label {
+    font-size: 12px;
+}
+.formElements #submit {
+    color: #fff;
+    background-color: #2EA8F4;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 24px;
+    cursor: pointer;
+    transition: ease-in 100ms all;
+}
+.formElements #submit:hover {
+    background-color: #BD1E1E;
+}
+
+/*  THANK YOU   */
+
+.thankyou p {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.thankyou div {
+    margin-bottom: 20px;
+}
