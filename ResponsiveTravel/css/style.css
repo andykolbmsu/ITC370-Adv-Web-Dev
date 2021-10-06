@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header, nav, main, footer {
+    margin:10px;
+    padding:10px;
+    background-color: #ddd;
+}
+header {
+    height: 200px;
+}
+
+nav {
+    text-align: center;
+}
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer {
+    height:100px;
+}
+
+
+.heroHeader {
+    position: relative;
+}
+.heroImg {
+    background-color: #eee;
+    height:200px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.heroText {
+    background-color: rgba(255,255,255,0.9);
+    height:200px;
+    padding: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.nolaHighlights {
+    display: flex;
+    flex-wrap: wrap;
+}
+.nolaImg, .nolaText {
+    flex-basis: 100%;
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.nolaImg {
+    height:120px;
+}
+
+/*      800 PX      */
+
+@media screen and (min-width: 800px) {
+    nav ul li {
+        display: inline-block;
+        padding: 0 40px;
+    }
+    .heroImg {
+        height:400px;
+    }
+    .heroText {
+        position: absolute;
+        height:200px;
+        width: 300px;
+        top: 100px;
+        right: 20px;
+    }
+   main#content, footer {
+        width:800px;
+        margin: 10px auto;
+    }
+
+    .nolaImg, .nolaText {
+        height: 160px;
+    }
+    .nolaImg {
+        flex-basis: 260px;
+        margin-right: 10px;
+    }
+    .nolaText {
+        flex-basis: 490px;
+    }
+}
+
+/*      1200 PX      */
+
+@media screen and (min-width: 1200px) {
+    main#content, footer {
+        width:1200px;
+    }
+    .nolaImg, .nolaText {
+        height: 300px;
+    }
+    .nolaImg {
+        flex-basis: 400px;
+        margin-right: 10px;
+    }
+    .nolaText {
+        flex-basis: 740px;
+    }
+}
