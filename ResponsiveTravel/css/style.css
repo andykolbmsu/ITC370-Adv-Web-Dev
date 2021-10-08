@@ -1,48 +1,88 @@
+/*      Andy Kolb               */
+/*      Responsive Travel       */
+/*      style.css               */
+/*      10/08/2021              */
+
 * {
     margin: 0;
     padding: 0;
 }
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #e3e3e3;
 }
-header, nav, main, footer {
-    margin:10px;
-    padding:10px;
-    background-color: #ddd;
+
+
+main {
+    padding:40px;
+    background-color: #fff;
 }
+
+
 header {
-    height: 200px;
-}
-
-nav {
     text-align: center;
+    padding:10px;
+    background-color: #e3e3e3;
 }
-nav ul {
-    padding: 0;
-    list-style: none;
-}
-
-footer {
-    height:100px;
+header #logo {
+    height: 60px;
+    width: auto;
 }
 
+
+/*      HERO HEADER AND NAVIGATION      */
 
 .heroHeader {
     position: relative;
 }
-.heroImg {
-    background-color: #eee;
-    height:200px;
-    margin-bottom: 10px;
+.heroHeader h1 {
+    font-size: 32px;
+    line-height: 48px;
+    color:rgb(58,62,69);
+}
+
+nav {
+    background-color: rgb(58,62,69);
     position: relative;
+    text-align: center;
+}
+nav ul {
+    padding: 6px;
+    list-style: none;
+}
+nav ul li {
+    padding:2px;
+}
+nav a {
+    color:#ccc;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #4cabb3;
+}
+
+.heroImg {
+    z-index: 100;
+    background-color: #eee;
+    background-image: url('../images/nola.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height:40vw;
+    position: relative;
+    border-bottom: 5px solid rgb(58,62,69);
 }
 .heroText {
-    background-color: rgba(255,255,255,0.9);
-    height:200px;
+    font-size: 18px;
+    line-height: 24px;
+    background-color: rgba(255,255,255,0.85);
     padding: 20px;
-    margin-bottom: 10px;
     position: relative;
 }
+
+
+/*      HIGHLIGHTS      */
 
 .nolaHighlights {
     display: flex;
@@ -50,17 +90,58 @@ footer {
 }
 .nolaImg, .nolaText {
     flex-basis: 100%;
-    background-color: #eee;
+    background-color: rgb(58,62,69);
+    border: rgb(58,62,69) 6px solid;
+
     padding: 10px;
     margin-bottom: 10px;
+    
 }
 .nolaImg {
     height:120px;
+    background-size: cover;
+    background-position: center center;
 }
+.nolaText {
+    color:#ccc;
+}
+.nolaText h2, .nolaText hr {
+    margin-bottom: 10px;
+}
+.nolaText hr {
+    border-top:3px solid #00bac2;
+    width: 100px;
+}
+.nolaText p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+/*      FOOTER      */
+
+footer {
+    background-color: rgb(58,62,69);
+    padding: 40px;
+    color:#ccc;
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+}
+
 
 /*      800 PX      */
 
 @media screen and (min-width: 800px) {
+    nav {
+        font-size: 18px;
+        background-color: rgba(58,62,69,0.8);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 200;
+    }
     nav ul li {
         display: inline-block;
         padding: 0 40px;
@@ -72,40 +153,51 @@ footer {
         position: absolute;
         height:200px;
         width: 300px;
-        top: 100px;
-        right: 20px;
+        top: 60px;
+        left: 20px;
+        z-index: 200;
     }
    main#content, footer {
         width:800px;
-        margin: 10px auto;
+        margin: 0 auto;
     }
 
     .nolaImg, .nolaText {
-        height: 160px;
+        height: 170px;
     }
     .nolaImg {
         flex-basis: 260px;
-        margin-right: 10px;
     }
     .nolaText {
-        flex-basis: 490px;
+        flex-basis: 476px;
     }
 }
+
 
 /*      1200 PX      */
 
 @media screen and (min-width: 1200px) {
+    .heroImg {
+        height:500px;
+    }
+    .heroText {
+        top: 80px;
+        left: 60px;
+    }
     main#content, footer {
-        width:1200px;
+        width:1000px;
     }
     .nolaImg, .nolaText {
         height: 300px;
     }
     .nolaImg {
-        flex-basis: 400px;
-        margin-right: 10px;
+        flex-basis: 320px;
     }
     .nolaText {
-        flex-basis: 740px;
+        flex-basis: 616px;
+    }
+    .nolaText p {
+        font-size: 18px;
+        line-height: 24px;
     }
 }
