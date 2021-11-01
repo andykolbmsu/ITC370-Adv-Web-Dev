@@ -1,7 +1,7 @@
 <!--    Andy Kolb           -->
 <!--    Bootstrap B&B       -->
 <!--    index.html          -->
-<!--    10/27/2021          -->
+<!--    10/31/2021          -->
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -20,10 +20,18 @@
     </head>
     <body>
 
+        <!--    HEADER      -->
+        <header>
+            <div class="container">
+                <img src="./images/kailua-kove-logo.png" alt="Kailua Kove Bed and Breakfast">
+            </div>
+        </header>
+
+
         <!--    NAVIGATION      -->
         <!--    Uses Bootstrap navbar classes     -->
         
-        <nav class="navbar navbar-expand-sm justify-content-center">
+        <nav class="navbar navbar-expand-sm justify-content-center navbar-dark bg-dark">
             <div class="container">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -47,14 +55,13 @@
 
         <main>
 
-            <h1>Kailua Kove Bed &amp; Breakfast</h1>
-            <p>One of Oahu’s few remaining legally licensed B&B is waiting for you!</p>
-
+            <section id="introduction" class="container">
+                <h1>Kailua Kove Bed &amp; Breakfast</h1>
+                <!--    Uses Bootstrap lead class     -->
+                <p class="lead">One of Oahu’s few remaining legally licensed B&B is waiting for you!</p>    
 
             <!--    CAROUSEL      -->
             <!--    Uses Bootstrap carousel functionality     -->
-
-            <section class="container">
 
             <div id="kkSlider" class="carousel slide" data-bs-ride="carousel">
 
@@ -97,29 +104,43 @@
             <!--    CARDS      -->
             <!--    Uses Bootstrap card functionality     -->
 
-            <section class="container" style="display:flex">
+            <section id="rooms-available" class="container">
 
-                <div class="card">
-                    <img class="card-img-top" src="./images/plumeriaRoom.jpg" alt="Plumeria Room">
-                    <h4 class="card-title">Plumeria Room</h4>
-                    <div class="card-body">Queen bed, private bathroom with shower, WiFi, cable TV, ceiling fan, and sliding door to lanai.</div>
-                    <a href="#" class="btn btn-primary">See More</a>
-                </div>
+                <h2>Rooms Available</h2>
 
-                <div class="card">
-                    <img class="card-img-top" src="./images/maileRoom1.jpg" alt="Maile Room">
-                    <h4 class="card-title">Maile Room</h4>
-                    <div class="card-body">Large room with king bed, small table with desk, WiFi, cable TV, ceiling fan, & sliding door to lanai.</div>
-                    <a href="#" class="btn btn-primary">See More</a>
+                <p>As you step into our rooms, the first thing you will notice is how fresh, airy and up to date, they are. The beds have crisp white linens that beg you to take a late afternoon nap after spending the day at the beach. The spacious & clean private bathrooms are updated with floor to ceiling travertine, accented with granite countertop & sink. The open walk-in shower has a hand-held shower head as well. The kitchenette has everything you need. From granite countertop, sink, mini-fridge, Keurig coffeemaker, toaster &amp; microwave. Kitchen utensils are provided. A daily self-serve continental breakfast is included. We re-stock it daily for your convenience to be enjoyed at your leisure.</p>
+
+                <div style="display:flex;justify-content: space-between;align-items: flex-start;">
+
+                    <div class="card">
+                        <img class="card-img-top" src="./images/plumeriaRoom.jpg" alt="Plumeria Room">
+                        <h4 class="card-title">Plumeria Room</h4>
+                        <div class="card-body">Queen bed, private bathroom with shower, WiFi, cable TV, ceiling fan, and sliding door to lanai.</div>
+                        <a href="#" class="btn btn-primary">See More</a>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img-top" src="./images/maileRoom1.jpg" alt="Maile Room">
+                        <h4 class="card-title">Maile Room</h4>
+                        <div class="card-body">Large room with king bed, small table with desk, WiFi, cable TV, ceiling fan, & sliding door to lanai.</div>
+                        <a href="#" class="btn btn-primary">See More</a>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img-top" src="./images/kailua1.jpg" alt="Contact Us">
+                        <h4 class="card-title">Contact Us</h4>
+                        <div class="card-body">Contact us by email or phone for booking and reservation requests.</div>
+                        <a href="./contact.html" class="btn btn-primary">See More</a>
+                    </div>
+
                 </div>
 
             </section>
 
 
-
             <!--    AMENITIES      -->
 
-            <section>
+            <section id="amenities">
 
                 <div class="container">
 
@@ -168,21 +189,18 @@
 
             </section>
 
-
-
         </main>
 
 
         <!--    FOOTER      -->
 
-        <footer>
-
-            <i class="fas fa-map-marker-alt"></i> 804 Mokapu Rd, Kailua, HI 96734
-            <i class="fas fa-at"></i> paradisepalmbnb@gmail.com
-            <i class="fas fa-phone"></i> 808-261-1431
-
+        <footer class="text-secondary bg-dark">
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> 804 Mokapu Rd, Kailua, HI 96734</li>
+                <li><i class="fas fa-at"></i> paradisepalmbnb@gmail.com</li>
+                <li><i class="fas fa-phone"></i> 808-261-1431</li>
+            </ul>
         </footer>
-
         
     </body>
 </html>

@@ -1,8 +1,92 @@
 /*      Andy Kolb            */
 /*      Bootstrap B&B        */
 /*      style.css            */
-/*      10/27/2021           */
+/*      10/31/2021           */
 
 
+h1 {
+    color: #278877;
+}
+
+header {
+    padding: 10px 0;
+}
+header img {
+    height: 100px;
+    width: auto;
+}
 
 
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/*  INDEX PAGE  */
+
+#introduction {
+    padding: 40px 0 20px;
+}
+
+#rooms-available {
+    padding: 40px 0;
+}
+#rooms-available .card {
+    width: 360px;
+    height: 400px;
+    margin: auto;
+}
+#rooms-available .card .card-title {
+    margin: 15px 15px 0;
+}
+
+#amenities {
+    background-image: url('../images/background.png');
+    background-size: cover;
+    padding: 40px 0;
+    text-align: center;
+}
+#amenities h2 {
+    margin-bottom: 20px;
+}
+#amenities ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#amenities li {
+    margin-bottom: 5px;
+}
+
+
+/*  CONTACT PAGE  */
+
+#contact {
+    padding: 40px 0;
+}
+
+#contact input {
+    margin-bottom: 20px;
+}
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:500px;
+    width:100%;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none !important;
+ 
+}
+#gmap_canvas {
+    height:400px;
+    width: 100%;
+}
