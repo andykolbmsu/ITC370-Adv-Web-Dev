@@ -1,0 +1,55 @@
+/*      Andy Kolb            */
+/*      Image Swapping       */
+/*      style.css            */
+/*      11/09/2021           */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dddddd;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main {
+    width: 80%;
+    max-width: 900px;
+    background-color: #ffffff;
+    margin:40px auto;
+    padding:30px 40px 40px;
+}
+h1 {
+    margin-bottom: 10px;
+}
+
+#imgContainer {
+    margin-bottom: 5px;
+}
+
+#imgLarge {
+    background-color: #dddddd;
+    width: 100%;
+    margin: auto;
+}
+
+#imgThumbs {
+    display: flex;
+    margin: 0 -0.5%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+#imgThumbs img {
+    background-color: #dddddd;
+    width: 24%;
+    margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+    #imgThumbs img {
+        width: 49%;
+        margin: 0 auto 5px;
+    }
+    
+}
