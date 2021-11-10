@@ -37,13 +37,31 @@ footer ul {
 #rooms-available {
     padding: 40px 0;
 }
-#rooms-available .card {
+
+#card-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#card-container .card {
     width: 360px;
     height: 400px;
     margin: auto;
 }
-#rooms-available .card .card-title {
+#card-container .card .card-title {
     margin: 15px 15px 0;
+}
+
+@media (max-width: 752px) {
+    #card-container {
+        display: block;
+    }
+    #card-container .card {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
 }
 
 #amenities {
